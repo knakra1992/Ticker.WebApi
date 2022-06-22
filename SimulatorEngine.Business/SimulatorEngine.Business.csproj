@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Implementation\" />
+    <None Remove="Hubs\" />
+    <None Remove="Microsoft.AspNet.SignalR" />
+    <None Remove="Microsoft.AspNetCore.SignalR" />
+    <None Remove="Microsoft.AspNetCore.SignalR.Core" />
+    <None Remove="Models\" />
+    <None Remove="Microsoft.Extensions.Caching.Memory" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementation\" />
+    <Folder Include="Hubs\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.1" />
+  </ItemGroup>
+</Project>
